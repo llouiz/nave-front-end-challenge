@@ -1,0 +1,65 @@
+:root .top-content {
+  /* Colors */
+  --black: rgba(0, 0, 0, 1);
+  --gray-gray-500: rgba(158, 158, 158, 1);
+  --gray-gray-800: rgba(66, 66, 66, 1);
+  --gray-gray-900: rgba(33, 33, 33, 1);
+  --gray-white: rgba(255, 255, 255, 1);
+  --transparent-black: rgba(0, 0, 0, 0.5);
+
+  /* Typographies */
+  /* boto */
+  --boto-family: 'Montserrat';
+  --boto-size: 14px;
+  --boto-weight: 600;
+  --boto-line-height: 24px;
+
+  /* montserrat-16-semi-bold */
+  --montserrat-16-semi-bold-family: 'Montserrat';
+  --montserrat-16-semi-bold-size: 16px;
+  --montserrat-16-semi-bold-weight: 600;
+  --montserrat-16-semi-bold-line-height: 18px;
+
+  /* texto */
+  --texto-family: 'Montserrat';
+  --texto-size: 16px;
+  --texto-weight: 400;
+  --texto-line-height: 24px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--gray-gray-900);
+}
+
+.top-content .header {
+  margin-bottom: 40px;
+  padding: 24px 32px;
+  display: flex;
+  align-items: center;
+}
+
+.top-content .logo {
+  margin-right: 1042.88px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.top-content .group {
+  margin-right: 9.86px;
+}
+.top-content .group-two {
+  margin-top: 11.52px;
+}
+
+.top-content .sair {
+  color: var(--black);
+  text-align: center;
+  font-family: var(--boto-family);
+  font-size: var(--boto-size);
+  font-weight: var(--boto-weight);
+  line-height: var(--boto-line-height);
+}
