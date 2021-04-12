@@ -1,0 +1,98 @@
+:root .login {
+  /* Colors */
+  --gray-gray-500: rgba(158, 158, 158, 1);
+  --gray-gray-800: rgba(66, 66, 66, 1);
+  --gray-gray-900: rgba(33, 33, 33, 1);
+  --gray-white: rgba(255, 255, 255, 1);
+
+  /* Typographies */
+  /* boto */
+  --boto-family: 'Montserrat';
+  --boto-size: 14px;
+  --boto-weight: 600;
+  --boto-line-height: 24px;
+
+  /* texto */
+  --texto-family: 'Montserrat';
+  --texto-size: 16px;
+  --texto-weight: 400;
+  --texto-line-height: 24px;
+}
+
+.login {
+  background-color: var(--gray-white);
+  display: flex;
+  align-items: center;
+  margin-top: 250px;
+}
+.login .card {
+  padding: 39px 31px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid var(--gray-gray-900);
+}
+.login .logo {
+  margin-bottom: 40px;
+  display: flex;
+  align-items: flex-start;
+}
+.login .group {
+  margin-right: 16px;
+}
+.login .group-two {
+  margin-top: 18.68px;
+}
+.login .e-mail-two {
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.login .e-mail:not(:last-of-type) {
+  margin-bottom: 4px;
+}
+
+.login .default {
+  background-color: var(--gray-white);
+  display: flex;
+  align-items: center;
+  border: 1px solid var(--gray-gray-800);
+}
+.login .nome {
+  height: 38px;
+  width: 320px;
+  color: black;
+  display: flex;
+  font-family: var(--texto-family);
+  font-size: var(--texto-size);
+  line-height: var(--texto-line-height);
+}
+
+.login label {
+  font-family: var(--texto-family);
+  font-size: var(--texto-size);
+  font-weight: 600;
+}
+
+.login .button-default {
+  text-align: center;
+  width: 330px;
+  color: var(--gray-white);
+  text-align: center;
+  font-family: var(--boto-family);
+  font-size: var(--boto-size);
+  font-weight: var(--boto-weight);
+  background-color: var(--gray-gray-900);
+  padding: 6px 16.7px;
+  align-items: center;
+}
+
+.login p {
+  color: #ff3333;
+  margin-bottom: 15px;
+  border: 1px solid #ff3333;
+  padding: 10px;
+  width: 100%;
+  text-align: center;
+}
