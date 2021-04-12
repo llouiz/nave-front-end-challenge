@@ -1,0 +1,184 @@
+/* This is the project stylesheet */
+
+:root .editar-naver {
+  /* Colors */
+  --gray-gray-500: rgba(158, 158, 158, 1);
+  --gray-gray-800: rgba(66, 66, 66, 1);
+  --gray-gray-900: rgba(33, 33, 33, 1);
+  --gray-white: rgba(255, 255, 255, 1);
+
+  /* Typographies */
+  /* boto */
+  --boto-family: 'Montserrat';
+  --boto-size: 14px;
+  --boto-weight: 600;
+  --boto-line-height: 24px;
+
+  /* texto */
+  --texto-family: 'Montserrat';
+  --texto-size: 16px;
+  --texto-weight: 400;
+  --texto-line-height: 24px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--gray-gray-900);
+}
+
+.editar-naver {
+  background-color: var(--gray-white);
+  padding: 0 0 205px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.editar-naver .flex-wrapper-one {
+  margin-bottom: 32px;
+  padding: 0 0 0 344px;
+  display: flex;
+  align-items: center;
+}
+.editar-naver .arrow-icon {
+  margin-right: 16px;
+  padding: 2.1px 6.49px 2.1px 5.84px;
+  display: flex;
+  align-items: center;
+}
+.editar-naver .content {
+  margin-bottom: 32px;
+  margin-left: 344px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.editar-naver .flex-wrapper-two {
+  display: flex;
+  align-items: flex-start;
+}
+.editar-naver .flex-wrapper-two:not(:last-of-type) {
+  margin-bottom: 32px;
+}
+.editar-naver .nome-two {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.editar-naver .nome-two:not(:last-of-type) {
+  margin-right: 32px;
+}
+.editar-naver .nome:not(:last-of-type) {
+  margin-bottom: 4px;
+}
+.editar-naver .salvar {
+  margin-left: 760px;
+}
+
+.editar-naver .nome {
+  height: 34px;
+  width: 320px;
+  color: black;
+  display: flex;
+  font-family: var(--texto-family);
+  font-size: var(--texto-size);
+  font-weight: 600;
+  line-height: var(--texto-line-height);
+}
+
+.editar-naver .button-default {
+  margin-left: 90px;
+  text-align: center;
+  width: 167.6px;
+  color: var(--gray-white);
+  text-align: center;
+  font-family: var(--boto-family);
+  font-size: var(--boto-size);
+  font-weight: var(--boto-weight);
+  background-color: var(--gray-gray-900);
+  padding: 6px 16.7px;
+
+  align-items: center;
+}
+
+span {
+  color: var(--gray-gray-900);
+}
+
+h2 {
+  color: var(--gray-gray-900);
+  font-weight: var(--boto-weight);
+  font-family: var(--texto-family);
+}
+
+.editar-naver .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  transition: opacity 200ms;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.editar-naver .overlay .cancel {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: default;
+}
+
+.editar-naver .overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.editar-naver .overlay .cancel {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: default;
+}
+
+.editar-naver .popup {
+  margin: 263px auto;
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #666;
+  width: 100%;
+  max-width: 670px;
+  border-radius: 6px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.editar-naver .flex-wrapper-one-popup {
+  margin-bottom: 24px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.editar-naver .naver-excluido {
+  margin-top: 8px;
+  margin-right: 385px;
+}
+.editar-naver .close-icon {
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.editar-naver .close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  height: 16px;
+  text-decoration: none;
+  width: 16px;
+}
