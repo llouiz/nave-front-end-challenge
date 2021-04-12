@@ -97,7 +97,6 @@ class Home extends Component {
   }
 
   render() {
-    console.log('Naver ID: ' + this.state.naverId);
     return (
       <div className='container home'>
         <div id='#_'></div>
