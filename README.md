@@ -30,3 +30,7 @@ npm run build
 Para realizar testes, você pode usar as informações utilizadas no ambiente de desenvolvimento:
 Email: mail2021@gmail.com Senha: nave1234
 ```
+
+## Autor
+
+- **Luiz Carlos** - _Initial work_ - [llouize](https://github.com/llouize)
