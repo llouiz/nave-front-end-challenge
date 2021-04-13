@@ -1,36 +1,26 @@
-import React, { Component } from 'react';
-import './style.css';
-import naveLogoRocket from '../../assets/nave-rocket-logo-sm.svg';
-import naveLogo from '../../assets/nave-logo-sm.svg';
-import { logout } from '../../services/auth';
+import React from 'react';
+import { useHistory, Link } from 'react-router-dom';
 
-class Header extends Component {
-  constructor() {
-    super();
-    this.handleLogout = this.handleLogout.bind(this);
+import imgLogo from '../../assets/logo.png';
+
+import './styles.css';
+
+const Header = () => {
+  const history = useHistory();
+
+  function logout() {
+    localStorage.removeItem('token');
+    history.push('/');
   }
 
-  handleLogout = () => {
-    logout();
-    localStorage.clear();
-    this.props.history.push('/');
-  };
-
-  render() {
-    return (
-      <div className='top-content'>
-        <div className='header'>
-          <div className='logo'>
-            <img alt='' className='group' src={naveLogoRocket} />
-            <img alt='' className='group-two' src={naveLogo} />
-          </div>
-          <a href='/' onClick={this.handleLogout} className='sair'>
-            Sair
-          </a>
-        </div>
-      </div>
-    );
-  }
-}
+  return (
+    <header id='header-common'>
+      <Link to='/home'>
+        <img src={imgLogo} alt='Logo' />
+      </Link>
+      <button onClick={logout}>Sair</button>
+    </header>
+  );
+};
 
 export default Header;
