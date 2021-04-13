@@ -2,7 +2,7 @@ import axios from 'axios';
 import { getToken } from './auth';
 
 const api = axios.create({
-  baseUrl: 'https://navedex-api.herokuapp.com/v1',
+  baseURL: 'https://navedex-api.herokuapp.com/v1',
 });
 
 api.interceptors.request.use(async (config) => {
