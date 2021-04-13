@@ -2,7 +2,7 @@
 
 ## Demo
 
-[Aqui](https://navedex.netlify.app/) você pode encontrar uma demonstração em produção com a build automatizada do App que se encontra hospedada no Netlifly.
+[Aqui](https://navedx.netlify.app/) você pode encontrar uma demonstração em produção com a build automatizada do App que se encontra hospedada no Netlifly.
 
 ## Uso
 
