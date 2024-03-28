@@ -19,7 +19,7 @@ const customStyles = {
 
 const Modal = ({ children, isOpen }) => {
   return (
-    <ReactModal isOpen={isOpen} style={customStyles}>
+    <ReactModal ariaHideApp={false} isOpen={isOpen} style={customStyles}>
       {children}
     </ReactModal>
   );
